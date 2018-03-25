@@ -4,8 +4,6 @@ This is my attempt at a boilerplate that allows you to build, test, and publish 
 
 ## Installation
 
----
-
 Clone the boilerplate locally:
 
 ```
@@ -24,8 +22,6 @@ git push -u origin master
 
 ## package.json
 
----
-
 Begin by editing the _package.json_ file:
 
 * name: This is the name you will use to download your library on npm once it's published. This has to be unique in the npm world.
@@ -34,8 +30,6 @@ Begin by editing the _package.json_ file:
 * repository: Change this to the github repository you will push your library to.
 
 ## Building the library
-
----
 
 Build your new components in the `lib/` folder, and make sure you export them in `lib/index.js`.
 
@@ -49,11 +43,9 @@ export {MyComponent, MyComponent2}
 
 ## Testing the components
 
----
-
 Before publishing your library to npm, you can test it locally.
 
-### **Storybook**
+### Storybook
 
 This boilerplate comes with [Storybook](https://storybook.js.org/basics/introduction/). You can run the server with the following command:
 
@@ -65,7 +57,7 @@ A webpack server with (hot-reload) will be available at http://localhost:9001/.
 
 You can test your components by creating new _stories_ in the `stories/` folder.
 
-### **Linking your library to another app**
+### Linking your library to another app
 
 Assuming you already have a working React application, this is a two part process.
 
@@ -91,8 +83,6 @@ import {MyComponent} from 'your_library_name'
 
 ## Commands
 
----
-
 ```
 yarn build
 ```
@@ -116,8 +106,6 @@ yarn unlink
 the same way to remove the symbolic link to your library.
 
 ## Publishing your library
-
----
 
 First, you'll have to create an account on [npm](https://www.npmjs.com/).
 
