@@ -75,16 +75,35 @@ This command will automatically transpile the code in `lib/` to `build/` on ever
 
 You can use it while the library is linked through **npm link** and being used in another app, to get "hot-reload"!
 
-Once you're done testing, you can use `yarn unlink` the same way to remove the symbolic link to your library.
+Once you're done testing, you can use
+```
+yarn unlink
+```
+the same way to remove the symbolic link to your library.
 
 ### Publishing your library
 
 First, you'll have to create an account on [npm](https://www.npmjs.com/).
 
-From the command-line, type `yarn login` and enter your credentials.
+From the command-line, type
+```
+yarn login
+```
+and enter your credentials.
 
-Then, when you're ready to publish your library (check that your package.json is complete before!), just run `yarn publish`, enter your password, and go check that it's available on the npm website!
+Then, when you're ready to publish your library (check that your package.json is complete before!), just run
+```
+yarn publish
+```
+enter your password, and go check that it's available on the npm website!
 
-You can also add it into a new project by doing `yarn add your_library_name`, or see all the info in the npm registry with `yarn info your_library_name`.
+You can also add it into a new project by doing 
+```
+yarn add your_library_name
+```
+or see all the info in the npm registry with
+```
+yarn info your_library_name
+```
 
 Have fun building new React components!
