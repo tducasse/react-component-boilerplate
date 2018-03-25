@@ -1,0 +1,10 @@
+{
+  "name": "simple-react-component",
+  "version": "0.1.0",
+  "description":
+    "A minimal boilerplate to build, test, and publish a React component to npm.",
+  "main": "lib/index.js",
+  "repository": "https://github.com/tducasse/simple-react-component.git",
+  "author": "Thibaud Ducasse <thibaud.ducasse@gmail.com>",
+  "license": "MIT"
+}
