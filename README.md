@@ -59,10 +59,18 @@ Then, you can call your component using
 import {MyComponent} from 'your_component_name'
 ```
 
-## Scripts
+Once you're done testing, you can use `yarn unlink` the same way to remove the symbolic link to your component.
 
-`yarn build`
-This script will take the code in `lib/` and transpile it to `build/`.
+## Commands
 
-`yarn build:watch`
-This script will transpile automatically the code in `lib/` to `build/` on every change/
+```
+yarn build
+```
+
+This command will take the code in `lib/` and transpile it to `build/`.
+
+```
+yarn build:watch
+```
+
+This command will automatically transpile the code in `lib/` to `build/` on every change/
