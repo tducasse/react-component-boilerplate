@@ -7,7 +7,7 @@ This is my attempt at a boilerplate that allows you to build, test, and publish 
 Clone the boilerplate locally:
 
 ```
-git clone https://github.com/tducasse/simple-react-component.git
+git clone https://github.com/tducasse/react-component-boilerplate.git
 ```
 
 ## Usage
