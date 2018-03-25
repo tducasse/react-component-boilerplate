@@ -4,13 +4,16 @@ This is my attempt at a boilerplate that allows you to build, test, and publish 
 
 ## Installation
 
+---
+
 Clone the boilerplate locally:
 
 ```
 git clone https://github.com/tducasse/react-component-boilerplate.git
 ```
 
-If you want to push your code to a new repository, remove the `.git` folder, and run 
+If you want to push your code to a new repository, remove the `.git` folder, and run
+
 ```
 git init
 git add .
@@ -19,10 +22,9 @@ git remote add origin [YOUR_REPO_URL]
 git push -u origin master
 ```
 
+## package.json
 
-## Usage
-
-### package.json
+---
 
 Begin by editing the _package.json_ file:
 
@@ -31,7 +33,9 @@ Begin by editing the _package.json_ file:
 * author: Replace my name and email with yours!
 * repository: Change this to the github repository you will push your library to.
 
-### Building the library
+## Building the library
+
+---
 
 Build your new components in the `lib/` folder, and make sure you export them in `lib/index.js`.
 
@@ -43,9 +47,25 @@ Note that you can export more than one component, using
 export {MyComponent, MyComponent2}
 ```
 
-### Testing the components
+## Testing the components
+
+---
 
 Before publishing your library to npm, you can test it locally.
+
+### **Storybook**
+
+This boilerplate comes with [Storybook](https://storybook.js.org/basics/introduction/). You can run the server with the following command:
+
+```
+yarn storybook
+```
+
+A webpack server with (hot-reload) will be available at http://localhost:9001/.
+
+You can test your components by creating new _stories_ in the `stories/` folder.
+
+### **Linking your library to another app**
 
 Assuming you already have a working React application, this is a two part process.
 
@@ -69,7 +89,9 @@ Then, you can call your components using
 import {MyComponent} from 'your_library_name'
 ```
 
-### Commands
+## Commands
+
+---
 
 ```
 yarn build
@@ -86,32 +108,43 @@ This command will automatically transpile the code in `lib/` to `build/` on ever
 You can use it while the library is linked through **npm link** and being used in another app, to get "hot-reload"!
 
 Once you're done testing, you can use
+
 ```
 yarn unlink
 ```
+
 the same way to remove the symbolic link to your library.
 
-### Publishing your library
+## Publishing your library
+
+---
 
 First, you'll have to create an account on [npm](https://www.npmjs.com/).
 
 From the command-line, type
+
 ```
 yarn login
 ```
+
 and enter your credentials.
 
 Then, when you're ready to publish your library (check that your package.json is complete before!), just run
+
 ```
 yarn publish
 ```
+
 enter your password, and go check that it's available on the npm website!
 
-You can also add it into a new project by doing 
+You can also add it into a new project by doing
+
 ```
 yarn add your_library_name
 ```
+
 or see all the info in the npm registry with
+
 ```
 yarn info your_library_name
 ```
