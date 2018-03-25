@@ -5,3 +5,4 @@ lib
 CODE_OF_CONDUCT.md
 .storybook
 stories
+.vscode
