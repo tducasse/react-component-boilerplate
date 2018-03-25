@@ -10,6 +10,16 @@ Clone the boilerplate locally:
 git clone https://github.com/tducasse/react-component-boilerplate.git
 ```
 
+If you want to push your code to a new repository, remove the `.git` folder, and run 
+```
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin [YOUR_REPO_URL]
+git push -u origin master
+```
+
+
 ## Usage
 
 ### package.json
