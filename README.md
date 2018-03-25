@@ -1,6 +1,6 @@
 # Simple React Component
 
-This is my attempt at a boilerplate that allows you to build, test, and publish a React component to npm.
+This is my attempt at a boilerplate that allows you to build, test, and publish a React component library to npm.
 
 ## Installation
 
@@ -16,14 +16,14 @@ git clone https://github.com/tducasse/simple-react-component.git
 
 Begin by editing the _package.json_ file:
 
-* name: This is the name you will use to download your component on npm once it's published. This has to be unique in the npm world.
-* description: Describe what your component does.
+* name: This is the name you will use to download your library on npm once it's published. This has to be unique in the npm world.
+* description: Describe what your library does.
 * author: Replace my name and email with yours!
-* repository: Change this to the github repository you will push your component to.
+* repository: Change this to the github repository you will push your library to.
 
-### Building the component
+### Building the library
 
-Build your new component in the `lib/` folder, and make sure you export it in `lib/index.js`.
+Build your new components in the `lib/` folder, and make sure you export them in `lib/index.js`.
 
 A component called `MyComponent` is provided as an example.
 
@@ -33,35 +33,33 @@ Note that you can export more than one component, using
 export {MyComponent, MyComponent2}
 ```
 
-### Testing the component
+### Testing the components
 
-Before publishing your component to npm, you can test it locally.
+Before publishing your library to npm, you can test it locally.
 
 Assuming you already have a working React application, this is a two part process.
 
-At the root of your new component folder, run
+At the root of your new library folder, run
 
 ```
 yarn link
 ```
 
-This will install your component in your global node_modules.
+This will install your library in your global node_modules.
 
 Then, in your React app, run
 
 ```
-yarn link your_component_name
+yarn link your_library_name
 ```
 
-Then, you can call your component using
+Then, you can call your components using
 
 ```
-import {MyComponent} from 'your_component_name'
+import {MyComponent} from 'your_library_name'
 ```
 
-Once you're done testing, you can use `yarn unlink` the same way to remove the symbolic link to your component.
-
-## Commands
+### Commands
 
 ```
 yarn build
@@ -73,4 +71,20 @@ This command will take the code in `lib/` and transpile it to `build/`.
 yarn build:watch
 ```
 
-This command will automatically transpile the code in `lib/` to `build/` on every change/
+This command will automatically transpile the code in `lib/` to `build/` on every change, basically providing what we could call "hot-rebuild".
+
+You can use it while the library is linked through **npm link** and being used in another app, to get "hot-reload"!
+
+Once you're done testing, you can use `yarn unlink` the same way to remove the symbolic link to your library.
+
+### Publishing your library
+
+First, you'll have to create an account on [npm](https://www.npmjs.com/).
+
+From the command-line, type `yarn login` and enter your credentials.
+
+Then, when you're ready to publish your library (check that your package.json is complete before!), just run `yarn publish`, enter your password, and go check that it's available on the npm website!
+
+You can also add it into a new project by doing `yarn add your_library_name`, or see all the info in the npm registry with `yarn info your_library_name`.
+
+Have fun building new React components!
