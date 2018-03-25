@@ -45,6 +45,8 @@ export {MyComponent, MyComponent2}
 
 Before publishing your library to npm, you can test it locally.
 
+You have two options:
+
 ### Storybook
 
 This boilerplate comes with [Storybook](https://storybook.js.org/basics/introduction/). You can run the server with the following command:
