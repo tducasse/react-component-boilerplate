@@ -81,6 +81,15 @@ Then, you can call your components using
 import {MyComponent} from 'your_library_name'
 ```
 
+Once you're done testing, you can use
+
+```
+yarn unlink
+```
+
+the same way to remove the symbolic link to your library.
+
+
 ## Commands
 
 ```
@@ -97,13 +106,6 @@ This command will automatically transpile the code in `lib/` to `build/` on ever
 
 You can use it while the library is linked through **npm link** and being used in another app, to get "hot-reload"!
 
-Once you're done testing, you can use
-
-```
-yarn unlink
-```
-
-the same way to remove the symbolic link to your library.
 
 ## Publishing your library
 
