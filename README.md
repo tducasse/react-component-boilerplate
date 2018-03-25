@@ -1,4 +1,4 @@
-# Simple React Component
+# React-component-boilerplate
 
 This is my attempt at a boilerplate that allows you to build, test, and publish a React component library to npm.
 
