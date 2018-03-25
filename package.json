@@ -2,7 +2,7 @@
   "name": "react-component-boilerplate",
   "version": "0.1.0",
   "description":
-    "A minimal boilerplate to build, test, and publish a React component to npm.",
+    "A minimal boilerplate to build, test, and publish a React component library to npm.",
   "repository": "https://github.com/tducasse/react-component-boilerplate.git",
   "author": "Thibaud Ducasse <thibaud.ducasse@gmail.com>",
   "license": "MIT",
