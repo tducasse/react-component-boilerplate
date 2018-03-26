@@ -33,7 +33,7 @@ Begin by editing the _package.json_ file:
 
 Build your new components in the `lib/` folder, and make sure you export them in `lib/index.js`.
 
-A component called `MyComponent` is provided as an example.
+A component called `SwitchColor` is provided as an example.
 
 Note that you can export more than one component, using
 
@@ -91,7 +91,6 @@ yarn unlink
 
 the same way to remove the symbolic link to your library.
 
-
 ## Commands
 
 ```
@@ -107,7 +106,6 @@ yarn build:watch
 This command will automatically transpile the code in `lib/` to `build/` on every change, basically providing what we could call "hot-rebuild".
 
 You can use it while the library is linked through **npm link** and being used in another app, to get "hot-reload"!
-
 
 ## Publishing your library
 
