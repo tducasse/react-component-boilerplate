@@ -12,7 +12,8 @@
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
     "prepublish": "yarn build",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o dist"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.15",
@@ -33,5 +34,10 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "storybook-deployer": {
+    "gitUsername": "tducasse",
+    "gitEmail": "thibaud.ducasse@gmail.com",
+    "commitMessage": "Deploy Storybook"
   }
 }
