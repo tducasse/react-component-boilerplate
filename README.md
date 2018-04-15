@@ -139,4 +139,16 @@ or see all the info in the npm registry with
 yarn info your_library_name
 ```
 
+## Publishing your library
+
+If you want to deploy your storybook folder to GitHub pages, you can just run:
+
+```
+yarn build-storybook
+```
+
+This command will build a standalone static version of your storybook files in the `docs` folder.
+
+This can then be deployed to GitHub pages by going into the settings for your project > Options > GitHub Pages, and changing the source to '/docs from the master branch'.
+
 Have fun building new React components!
