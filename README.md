@@ -59,6 +59,16 @@ A webpack server with (hot-reload) will be available at http://localhost:9001/.
 
 You can test your components by creating new _stories_ in the `stories/` folder.
 
+If you want to deploy your storybook folder to GitHub pages, you can just run:
+
+```
+yarn build-storybook
+```
+
+This command will build a standalone static version of your storybook files in the `docs` folder.
+
+This can then be deployed to GitHub pages by going into the settings for your project > Options > GitHub Pages, and changing the source to '/docs from the master branch'.
+
 ### Linking your library to another app
 
 Assuming you already have a working React application, this is a two part process.
@@ -138,17 +148,5 @@ or see all the info in the npm registry with
 ```
 yarn info your_library_name
 ```
-
-## Publishing your library
-
-If you want to deploy your storybook folder to GitHub pages, you can just run:
-
-```
-yarn build-storybook
-```
-
-This command will build a standalone static version of your storybook files in the `docs` folder.
-
-This can then be deployed to GitHub pages by going into the settings for your project > Options > GitHub Pages, and changing the source to '/docs from the master branch'.
 
 Have fun building new React components!
